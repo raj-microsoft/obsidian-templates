@@ -9,3 +9,5 @@
 
 /* Final legibility pass: UI metadata stays readable; miniature site artwork is decorative. */
 .hero-bottom,.collection-foot,.template-index,.footer-bottom{font-size:12px}.nav-links .mono{font-size:12px}.price-card>.mono{font-size:12px}.artwork{aspect-ratio:16/10!important;min-height:0!important;flex:none!important}.span-4 .art-copy{font-size:clamp(28px,2.7vw,42px)}.template-grid{align-items:start}.template-card{align-self:start}.marquee-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--lime);vertical-align:middle}.step-art .artwork{height:100%;aspect-ratio:auto!important}.large-art{aspect-ratio:16/9!important}@media(max-width:700px){.hero .eyebrow{font-size:12px;letter-spacing:.15em}.hero-bottom{font-size:11px}.eyebrow{font-size:12px;letter-spacing:.2em}.span-4 .art-copy{font-size:36px}.footer-bottom{font-size:11px}.large-art{aspect-ratio:1/1!important}}
+
+@media(max-width:700px){.template-card:hover{transform:none!important}.button:hover{transform:none!important}}
