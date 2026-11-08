@@ -1,0 +1,1 @@
+export default {content:['./index.html','./src/**/*.{ts,tsx}'],theme:{extend:{colors:{obsidian:'#0A0A0A',lime:'#D4FF4F'},borderRadius:{studio:'16px'},fontFamily:{sans:['Geist','sans-serif'],mono:['Geist Mono','monospace'],display:['Instrument Serif','serif']}}},plugins:[]};
