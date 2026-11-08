@@ -26,4 +26,4 @@ Disposition: ship at the scope of the inline visual/functional review. Detector 
 ## Verification
 Production TypeScript/Vite build passed. Local Edge 1440/390: eight cards, eight FAQs, no horizontal overflow, no JavaScript page errors, native preview Escape close, pricing state, mobile menu and reduced-motion loader skip passed. Full-page and first-viewport screenshots visually inspected.
 
-Known limitation: strict LCP <2.5 seconds is not certified; the specified 3-second loader delays normal-motion presentation by design. No paid downloads or checkout exist; this is a fictional storefront.
+Follow-up: full source sections 05–13 cross-checked, exact guide marquee restored and hover pause verified. Live Lighthouse 13.6.0 measured mobile LCP 1.099s / CLS 0.00460 and desktop LCP 0.931s / CLS 0.00573. Both guide budgets pass; accessibility and best practices both 100 after fixing accessible names, marquee semantics and favicon. See PERFORMANCE.md. The required 3-second loader still delays normal-motion presentation; laboratory LCP is not intro completion. No paid downloads or checkout exist; this is a fictional storefront.

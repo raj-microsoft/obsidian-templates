@@ -21,4 +21,7 @@ Impeccable context and detector ran. Detector returned three font-style warnings
 
 Review and documentation were performed inline because this researcher's operating instructions prohibit further delegation. PRODUCT.md was inferred from the explicit assigned brief, without a separate interview. DESIGN.md and .impeccable/design.json document the shipped system.
 
-The required 3-second loader intentionally conflicts with a strict visible-content LCP below 2.5 seconds; no Lighthouse performance score is claimed.
+## Lighthouse follow-up (2026-11-09)
+Live-site Lighthouse 13.6.0 with headless Edge: mobile performance 95, accessibility 100, best practices 100, LCP 1.099s, CLS 0.00460; desktop performance 100, accessibility 100, best practices 100, LCP 0.931s, CLS 0.00573. Both measured budgets pass (LCP <2.5s, CLS <0.05). The specified 3-second intro still delays normal-motion presentation; laboratory LCP is not equivalent to intro completion. Lighthouse's LCP node was the hero's italic headline. Remaining advisories concern main-thread work, render-blocking CSS and GitHub Pages cache policy.
+
+The supplied original sections 05–13 were cross-checked. Marquee now uses exact guide text `BUILT WITH AI · NOT BY AI`, with verified pause-on-hover. Mobile hover transforms are disabled. Lighthouse findings on accessible names and marquee ARIA were fixed, and a missing favicon was supplied. Run `node --no-use-env-proxy lighthouse-check.mjs` to reproduce on this proxy-configured host. Full local JSON reports live in `.impeccable/review/`. The public summary is PERFORMANCE.md.
