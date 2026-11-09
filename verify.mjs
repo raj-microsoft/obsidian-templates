@@ -11,6 +11,7 @@ await page.goto(base,{waitUntil:'networkidle'});await page.waitForTimeout(3800);
 const overflow=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));
 await page.screenshot({path:`${dir}/${width===1440?'desktop':'mobile'}-hero.png`});
 await page.emulateMedia({reducedMotion:'reduce'});await page.reload({waitUntil:'networkidle'});
+for(const img of await page.locator('img[loading=lazy]').all()){await img.scrollIntoViewIfNeeded();await img.evaluate(i=>i.decode());}await page.evaluate(()=>scrollTo(0,0));
 await page.screenshot({path:`${dir}/${width===1440?'desktop':'mobile'}.png`,fullPage:true});
 await page.locator('.template-card').first().click();await page.locator('dialog').waitFor({state:'visible'});await page.screenshot({path:`${dir}/preview-${width}.png`});await page.keyboard.press('Escape');
 if(await page.locator('dialog').isVisible())throw new Error('dialog failed to close');

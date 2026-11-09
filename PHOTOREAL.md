@@ -1,0 +1,11 @@
+# Photoreal pass — 2026-11-09
+
+12 AI-generated photographic compositions made with ChatGPT image generation: one obsidian hero, eight template photographs generated as two four-panel contact sheets, and three method photographs generated as one three-panel sheet. Sheets were inspected, split, cropped to 16:10 and encoded as WebP quality 78, with 480/800 responsive derivatives. Hero has 960/1600 derivatives. Each original download had a distinct SHA-256 hash; all compositions were visually inspected.
+
+Gemini Create video was attempted with the hero JPEG, then a resized PNG. Both attachments entered `gem-attachment-loading-error` and disabled Send. No Veo clip was generated and no quota was consumed. The approved fallback is a locally rendered H.264 10-second periodic light-breathing loop of the ChatGPT still, with a separate original canvas dust layer. Desktop 1280×720: 76,623 bytes; mobile 768×432: 32,850 bytes. Poster desktop: 64,114 bytes; mobile: 29,868 bytes. Motion is intentionally barely perceptible and the cycle repeats without a camera jump.
+
+The original design system, serif/sans hierarchy, 8-card bento, 3-second loader, dust, FAQ, dialogs, pricing disclosures, and source/font credits remain. Miniature website typography deliberately stays authored HTML/CSS above photographs: AI images contain no requested text/logos. 50% black hero overlay; priority poster, video source set after window load plus 800ms; lazy below-fold imagery; fixed dimensions; reduced-motion still; video pause control. No HLS segmentation, therefore no hls.js.
+
+Verification scripts: `npm run build`, `node --no-use-env-proxy verify.mjs [URL]`, `node --no-use-env-proxy photoreal-check.mjs [URL]`, `node --no-use-env-proxy lighthouse-check.mjs [URL]`. Local reports/screenshots in `.impeccable/review/`. Impeccable ran on built HTML and on rendered built HTML with linked CSS inlined for accurate inspection (base-path limitation in detector). Real miniature-text and hover-contrast findings fixed. Italic-serif warning retained because explicitly required by the source guide.
+
+Source design: https://hyliox.io/prompt (Horyx Studio). Live: https://raj-microsoft.github.io/obsidian-templates/ . See PERFORMANCE.md for live Lighthouse results.
